@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <style>
+        img {
+        border-radius: 50%;
+        }
+    body { 
+        text-align: center;
+        font-family: 'RocknRoll One', sans-serif;
+        color: rgb(255, 255, 255); 
+        border-radius: 10%}       
+     </style>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  <body style="background-color:rgb(0, 0, 0);"">
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <h1>Heysil's Portfolio</h1>
+      <img src=" /images/headshot.jpg" style="width:250px;height:300px;" />
+      <p>This is my portfolio!</p>
+      <p> Hello there! I'm Heysil, a sophomore studying Computer Science at Cornell University.
+          My programming Journey began the summer before senior year of high school when I 
+            got the chance to participate in the Girls Who Code Summer Immersion Program. There I 
+            I was introduced to what coding meant and the power a couple of words and funky punctuations 
+            could have on the world. I'm here to show you all my progress so far in the industry. Hope
+            you find it interesting! </p>
+        <img src="/images/bearLogo.png" style="width:128px;height:128px;" />
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <p>Click here to get a random fun fact about me!</p>
+      <button onclick="addRandomGreeting()">Click</button>
       <div id="greeting-container"></div>
+      <h2> Projects </h2>
+      <h4> Space Invadors Game </h4>
+      <img src="/images/space.png" style="width:200px;height:200px;" />
+    <ul> Introduction to Computing using Python, Cornell University Ithaca, NY
+        <li>Collaborated with a partner to develop a 2000’s style game</li> 
+        <li> Used front-end programming to develop user-friendly experience </li>
+        <li> Applied Back-end programming for seamless graphics and in game score-keeping using python and kivy</li>
+    </ul>
     </div>
   </body>
 </html>
