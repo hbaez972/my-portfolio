@@ -28,8 +28,20 @@ function addRandomGreeting() {
 }
 async function showHelloWorld(){
     const responseFromServer = await fetch('/hello');
-  const textFromResponse = await responseFromServer.text();
+  const facts = await responseFromServer.json();
 
   const helloContainer = document.getElementById('hello-world');
-  helloContainer.innerText = textFromResponse;
+  helloContainer.innerText = '';
+
+  helloContainer.appendChild(
+      createListElement('Funfact #1: ' + facts.funfact1));
+  helloContainer.appendChild(
+      createListElement('Funfact #2: ' + facts.funfact2));
+  helloContainer.appendChild(
+      createListElement('Funfact #3: ' + facts.funfact3));
+}
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerText = text;
+  return liElement;
 }
