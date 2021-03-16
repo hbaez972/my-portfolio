@@ -32,13 +32,12 @@ async function showHelloWorld(){
 
   const helloContainer = document.getElementById('hello-world');
   helloContainer.innerText = '';
+  const factuals = facts[Math.floor(Math.random() * facts.length)];
 
   helloContainer.appendChild(
-      createListElement('Funfact #1: ' + facts.funfact1));
-  helloContainer.appendChild(
-      createListElement('Funfact #2: ' + facts.funfact2));
-  helloContainer.appendChild(
-      createListElement('Funfact #3: ' + facts.funfact3));
+      createListElement('Random fact: ' + factuals));
+
+
 }
 function createListElement(text) {
   const liElement = document.createElement('li');
