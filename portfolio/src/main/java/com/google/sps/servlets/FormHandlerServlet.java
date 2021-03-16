@@ -25,7 +25,7 @@ public class FormHandlerServlet extends HttpServlet {
 
     // Write the value to the response so the user can see it.
     response.getWriter().println("Hey " + nameValue +"! Thank you for trying to contact me. Here is your submission information:");
-    response.getWriter().println("You email: " + emailValue);
-    response.getWriter().println("You message: " + messageValue);
+    response.getWriter().println("Your email: " + emailValue);
+    response.getWriter().println("Your message: " + messageValue);
   }
 }
